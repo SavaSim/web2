@@ -20,5 +20,10 @@ namespace WebApp.Persistence
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Lokacija> Lokacija { get; set; }
+        public DbSet<Karte> Karte { get; set; }
+        public DbSet<Linije> Linije { get; set; }
+        public DbSet<Stanica> Stanica { get; set; }
     }
 }
